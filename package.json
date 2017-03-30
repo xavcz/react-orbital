@@ -17,8 +17,7 @@
     "build": "react-scripts build",
     "lint": "eslint --quiet --ext .js .",
     "prettier": "prettier --write \"src/**/*.js\" --single-quote=true --trailing-comma=es5 --print-width=100",
-    "pretest": "npm run lint",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },

@@ -1,11 +1,11 @@
 import { PropTypes } from 'react';
 import styled from 'styled-components';
-import { colors, bordered } from './_styles';
+import { colors, bordered, borderWidth } from './_styles';
 
 const Line = styled.div`
   ${bordered};
   border-color: ${colors.gold} transparent transparent transparent;
-  height: 0.1vw;
+  height: ${borderWidth};
   position: absolute;
   overflow: hidden;
   top: ${props => props.top}%;

@@ -2,7 +2,40 @@ exports[`Storyshots Planetoid default 1`] = `
 <div
   className="hSCAmt">
   <div
-    className="enXvUK" />
+    className="lgfYjZ" />
+</div>
+`;
+
+exports[`Storyshots Planetoid with animated moons and lines 1`] = `
+<div
+  className="hSCAmt">
+  <div
+    className="fBSAXi" />
+  <div
+    className="idRdZV" />
+  <div
+    className="lgfYjZ">
+    <div
+      className="eCcwNF" />
+    <div
+      className="ghQcng" />
+    <div
+      className="hnNTOi" />
+    <div
+      className="irbcDF" />
+    <div
+      className="letQFJ" />
+    <div
+      className="eNNVky" />
+    <div
+      className="lakAtv" />
+    <div
+      className="fCHlqD" />
+    <div
+      className="hhFyZS" />
+    <div
+      className="fTroxn" />
+  </div>
 </div>
 `;
 
@@ -10,11 +43,11 @@ exports[`Storyshots Planetoid with moons 1`] = `
 <div
   className="hSCAmt">
   <div
-    className="kErlfF" />
+    className="kJLZyW" />
   <div
-    className="bPgMud" />
+    className="dgORtm" />
   <div
-    className="enXvUK" />
+    className="lgfYjZ" />
 </div>
 `;
 
@@ -22,11 +55,11 @@ exports[`Storyshots Planetoid with moons and lines 1`] = `
 <div
   className="hSCAmt">
   <div
-    className="kErlfF" />
+    className="kJLZyW" />
   <div
-    className="bPgMud" />
+    className="dgORtm" />
   <div
-    className="enXvUK">
+    className="lgfYjZ">
     <div
       className="eCcwNF" />
     <div

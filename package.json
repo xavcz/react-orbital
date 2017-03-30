@@ -1,0 +1,28 @@
+{
+  "name": "react-orbital",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "styled-components": "^1.4.4"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
+    "react-scripts": "0.9.5",
+    "storyshots": "^3.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint --quiet --ext .js .",
+    "prettier": "prettier --write \"src/**/*.js\" --single-quote=true --trailing-comma=es5 --print-width=100",
+    "pretest": "npm run lint",
+    "test": "react-scripts test --env=jsdom",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

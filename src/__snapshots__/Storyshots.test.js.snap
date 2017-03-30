@@ -1,6 +1,52 @@
-exports[`Storyshots IconWrapper default 1`] = `
+exports[`Storyshots Planetoid default 1`] = `
 <div
-  className="klGKGa">
-  🚀
+  className="hSCAmt">
+  <div
+    className="enXvUK" />
+</div>
+`;
+
+exports[`Storyshots Planetoid with moons 1`] = `
+<div
+  className="hSCAmt">
+  <div
+    className="kErlfF" />
+  <div
+    className="bPgMud" />
+  <div
+    className="enXvUK" />
+</div>
+`;
+
+exports[`Storyshots Planetoid with moons and lines 1`] = `
+<div
+  className="hSCAmt">
+  <div
+    className="kErlfF" />
+  <div
+    className="bPgMud" />
+  <div
+    className="enXvUK">
+    <div
+      className="eCcwNF" />
+    <div
+      className="ghQcng" />
+    <div
+      className="hnNTOi" />
+    <div
+      className="irbcDF" />
+    <div
+      className="letQFJ" />
+    <div
+      className="eNNVky" />
+    <div
+      className="lakAtv" />
+    <div
+      className="fCHlqD" />
+    <div
+      className="hhFyZS" />
+    <div
+      className="fTroxn" />
+  </div>
 </div>
 `;

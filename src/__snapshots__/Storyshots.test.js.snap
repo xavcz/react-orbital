@@ -1,12 +1,4 @@
-exports[`Storyshots Planetoid default 1`] = `
-<div
-  className="hSCAmt">
-  <div
-    className="lgfYjZ" />
-</div>
-`;
-
-exports[`Storyshots Planetoid with animated moons and lines 1`] = `
+exports[`Storyshots Planetoid in css 1`] = `
 <div
   className="hSCAmt">
   <div
@@ -39,47 +31,30 @@ exports[`Storyshots Planetoid with animated moons and lines 1`] = `
 </div>
 `;
 
-exports[`Storyshots Planetoid with moons 1`] = `
-<div
-  className="hSCAmt">
-  <div
-    className="kJLZyW" />
-  <div
-    className="dgORtm" />
-  <div
-    className="lgfYjZ" />
-</div>
-`;
-
-exports[`Storyshots Planetoid with moons and lines 1`] = `
-<div
-  className="hSCAmt">
-  <div
-    className="kJLZyW" />
-  <div
-    className="dgORtm" />
-  <div
-    className="lgfYjZ">
-    <div
-      className="eCcwNF" />
-    <div
-      className="ghQcng" />
-    <div
-      className="hnNTOi" />
-    <div
-      className="irbcDF" />
-    <div
-      className="letQFJ" />
-    <div
-      className="eNNVky" />
-    <div
-      className="lakAtv" />
-    <div
-      className="fCHlqD" />
-    <div
-      className="hhFyZS" />
-    <div
-      className="fTroxn" />
-  </div>
-</div>
+exports[`Storyshots Planetoid in svg 1`] = `
+<svg
+  height={147}
+  width={147}>
+  <circle
+    cx={73.5}
+    cy={73.5}
+    fill="#303030"
+    r={42}
+    stroke="#a78247"
+    strokeWidth="0.1vw" />
+  <g
+    stroke="#a78247"
+    strokeWidth="0.1vw">
+    <line
+      x1={35.4350729444607}
+      x2={75.4350729444607}
+      y1={55.750033006890625}
+      y2={55.750033006890625} />
+    <line
+      x1={115.5}
+      x2={95.5}
+      y1={73.5}
+      y2={73.5} />
+  </g>
+</svg>
 `;

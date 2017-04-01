@@ -19,7 +19,7 @@ const animations = {
   `,
 };
 
-const Planetoid = styled.div`
+const PlanetoidCss = styled.div`
   ${bordered}
   position: absolute;
   overflow: hidden;
@@ -32,11 +32,11 @@ const Planetoid = styled.div`
   ${props => props.animation && `animation: ${animations[props.animation]} ${animationTime} ease infinite`}
 `;
 
-Planetoid.propTypes = {
+PlanetoidCss.propTypes = {
   diameter: PropTypes.number,
   top: PropTypes.number,
   left: PropTypes.number,
   animation: PropTypes.oneOf(['moonTop', 'moonBottom']),
 };
 
-export default Planetoid;
+export default PlanetoidCss;

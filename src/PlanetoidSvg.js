@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 // import styled from 'styled-components';
 
-const planetoidStripeGenerator = (cx, cy, r, angleDeg, length) => {
+const planetoidStripeGenerator = (cx, cy, r, angleDeg, length, offset = 0) => {
   // convert angle in radian
   const angle = angleDeg * Math.PI / 180;
 
@@ -14,9 +14,9 @@ const planetoidStripeGenerator = (cx, cy, r, angleDeg, length) => {
   const y = cy - r * Math.sin(angle);
 
   return {
-    x1: x,
+    x1: x + direction * offset,
     y1: y,
-    x2: x + direction * length,
+    x2: x + direction * (length + offset),
     y2: y,
   };
 };
@@ -38,6 +38,10 @@ const PlanetoidSvg = ({ radius }) => {
       <g stroke="#a78247" strokeWidth="0.1vw">
         <line {...planetoidStripeGenerator(planetoidCenter, planetoidCenter, radius, 25, 40)} />
         <line {...planetoidStripeGenerator(planetoidCenter, planetoidCenter, radius, 180, 20)} />
+        <line {...planetoidStripeGenerator(planetoidCenter, planetoidCenter, radius, 180, 20, 30)} />
+        <line {...planetoidStripeGenerator(planetoidCenter, planetoidCenter, radius, 200, 30)} />
+        <line {...planetoidStripeGenerator(planetoidCenter, planetoidCenter, radius, -30, 15)} />
+        <line {...planetoidStripeGenerator(planetoidCenter, planetoidCenter, radius, -30, 5, 20)} />
       </g>
     </svg>
   );

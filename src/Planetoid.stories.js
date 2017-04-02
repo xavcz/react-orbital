@@ -1,13 +1,13 @@
 import { storiesOf } from '@kadira/storybook';
 import React from 'react';
-import IconWrapperCss from './IconWrapperCss';
-import PlanetoidCss from './PlanetoidCss';
-import LineCss from './LineCss';
+import IconWrapperCss from './css/IconWrapperCss';
+import PlanetoidCss from './css/PlanetoidCss';
+import LineCss from './css/LineCss';
 
 import PlanetoidSvg from './PlanetoidSvg';
 
 storiesOf('Planetoid', module)
-  .add('in css', () => (
+  .add('in css (old way)', () => (
     <IconWrapperCss>
       <PlanetoidCss diameter={8} animation="moonTop" />
       <PlanetoidCss diameter={12} animation="moonBottom" />

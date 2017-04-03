@@ -6,7 +6,7 @@ export const colors = {
 };
 
 export const animationTime = '5s';
-export const borderWidth = '0.1vw';
+export const borderWidth = '0.2vw';
 
 export const bordered = `border: ${borderWidth} solid ${colors.gold};`;
 

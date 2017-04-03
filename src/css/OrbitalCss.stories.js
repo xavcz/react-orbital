@@ -4,7 +4,7 @@ import IconWrapperCss from './IconWrapperCss';
 import PlanetoidCss from './PlanetoidCss';
 import LineCss from './LineCss';
 
-storiesOf('Orbital icon in css (deprecated)', module)
+storiesOf('Orbital (CSS - deprecated)', module)
   .add('animated', () => (
     <IconWrapperCss>
       <PlanetoidCss diameter={8} animation="moonTop" />

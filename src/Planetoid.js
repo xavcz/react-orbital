@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes, Children, cloneElement }  from 'react';
 
-const Planetoid = ({ containerSize, cx, cy, radius: r }) => {
+const Planetoid = ({ containerSize, cx, cy, radius: r, children }) => {
   // svg circle attributes
   const planetoidDefinition = {
     r,
@@ -10,7 +10,12 @@ const Planetoid = ({ containerSize, cx, cy, radius: r }) => {
     cy: cy || containerSize / 2,
   };
   
-  return <circle {...planetoidDefinition} />;
+  return children 
+    ? <g>
+        <circle {...planetoidDefinition} />
+        {Children.map(children, child => cloneElement(child, planetoidDefinition))}
+      </g> 
+    : <circle {...planetoidDefinition} />;
 };
 
 Planetoid.propTypes = {
@@ -18,6 +23,7 @@ Planetoid.propTypes = {
   containerSize: PropTypes.number,
   cx: PropTypes.number,
   cy: PropTypes.number,
+  children: PropTypes.node,
 };
 
 export default Planetoid;

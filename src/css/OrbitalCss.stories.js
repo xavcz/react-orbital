@@ -1,8 +1,8 @@
 import { storiesOf } from '@kadira/storybook';
 import React from 'react';
-import IconWrapperCss from './css/IconWrapperCss';
-import PlanetoidCss from './css/PlanetoidCss';
-import LineCss from './css/LineCss';
+import IconWrapperCss from './IconWrapperCss';
+import PlanetoidCss from './PlanetoidCss';
+import LineCss from './LineCss';
 
 storiesOf('Orbital icon in css (deprecated)', module)
   .add('animated', () => (
@@ -25,8 +25,8 @@ storiesOf('Orbital icon in css (deprecated)', module)
   ))
   .add('static', () => (
     <IconWrapperCss>
-      <PlanetoidCss diameter={8} />
-      <PlanetoidCss diameter={12} />
+      <PlanetoidCss diameter={8} top={75} left={15} />
+      <PlanetoidCss diameter={12} top={10} left={95} />
       <PlanetoidCss diameter={62}>
         <LineCss top={15} left={0} length={60} />
         <LineCss top={30} left={0} length={20} />

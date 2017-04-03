@@ -1,28 +1,29 @@
 import { storiesOf } from '@kadira/storybook';
 import React from 'react';
-import IconWrapperCss from './css/IconWrapperCss';
-import PlanetoidCss from './css/PlanetoidCss';
-import LineCss from './css/LineCss';
 
-import PlanetoidSvg from './PlanetoidSvg';
+import OrbitalWrapper from './OrbitalWrapper';
+import Planetoid from './Planetoid';
 
-storiesOf('Planetoid', module)
-  .add('in css (old way)', () => (
-    <IconWrapperCss>
-      <PlanetoidCss diameter={8} animation="moonTop" />
-      <PlanetoidCss diameter={12} animation="moonBottom" />
-      <PlanetoidCss diameter={62}>
-        <LineCss top={15} left={0} length={60} />
-        <LineCss top={30} left={0} length={20} />
-        <LineCss top={30} left={25} length={12} />
-        <LineCss top={38} left={60} length={40} />
-        <LineCss top={48} left={80} length={20} />
-        <LineCss top={57} left={0} length={30} />
-        <LineCss top={57} left={35} length={12} />
-        <LineCss top={68} left={0} length={70} />
-        <LineCss top={80} left={50} length={12} />
-        <LineCss top={80} left={70} length={30} />
-      </PlanetoidCss>
-    </IconWrapperCss>
+storiesOf('Orbital', module)
+  .add('big central planetoid', () => (
+    <OrbitalWrapper containerSize={100}>
+      <Planetoid radius={42} />
+      {/* <Planetoid radius={42}>
+        <Line angle={50} length={40} />
+        <Line angle={40} length={14} />
+        <Line angle={40} length={10} offset={14 + 5} />
+      </Planetoid> */}
+    </OrbitalWrapper>
   ))
-  .add('in svg', () => <PlanetoidSvg radius={42} />);
+  .add('planetoid with moons', () => (
+    <OrbitalWrapper containerSize={100}>
+      <Planetoid radius={31} />
+      <Planetoid radius={6} cx={10} cy={15} />
+      <Planetoid radius={4} cx={75} cy={85} />
+      {/* <Planetoid radius={42}>
+        <Line angle={50} length={40} />
+        <Line angle={40} length={14} />
+        <Line angle={40} length={10} offset={14 + 5} />
+      </Planetoid> */}
+    </OrbitalWrapper>
+  ));

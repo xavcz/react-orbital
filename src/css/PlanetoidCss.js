@@ -1,6 +1,6 @@
 import { PropTypes } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { colors, bordered, animationTime } from './_styles';
+import { colors, bordered, animationTime } from '../_styles';
 
 const animations = {
   moonTop: keyframes`

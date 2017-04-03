@@ -1,6 +1,6 @@
 import { PropTypes } from 'react';
 import styled from 'styled-components';
-import { colors, bordered, borderWidth } from './_styles';
+import { colors, bordered, borderWidth } from '../_styles';
 
 const LineCss = styled.div`
   ${bordered};

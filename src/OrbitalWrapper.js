@@ -1,21 +1,20 @@
 import React, { PropTypes, Children, cloneElement } from 'react';
 import { colors, borderWidth } from './_styles';
 
-// prefer constant container size for now
-// note: https://medium.com/dailyjs/react-is-slow-react-is-fast-optimizing-react-apps-in-practice-394176a11fba#0614
 const containerSize = 100;
 
 const OrbitalWrapper = ({ children }) => (
   <svg
-    width={`${containerSize}px`}
-    height={`${containerSize}px`}
+    xmlns="http://www.w3.org/2000/svg"
+    width={containerSize}
+    height={containerSize}
     fill={colors.dark}
     stroke={colors.gold}
     strokeWidth={borderWidth}
+    // debug
+    style={{ border: '2px red solid' }}
   >
-    <g>
-      {Children.map(children, child => cloneElement(child, { containerSize }))}
-    </g>
+    {Children.map(children, child => cloneElement(child, { containerSize }))}
   </svg>
 );
 

@@ -7,11 +7,11 @@ const PlanetoidStripe = ({ cx, cy, r, angle, length, offset = 0 }) => {
   // make the stripe goes from left to right or right to left
   // depending on the angle in degree
   const direction = angle >= 80 || angle <= -80 ? -1 : 1;
-  
+
   // base coordinate for the line to start from the planetoid edge
   const x = cx - r * Math.cos(angleRadian);
   const y = cy - r * Math.sin(angleRadian);
-  
+
   const stripeDefinition = {
     x1: x + direction * offset,
     y1: y,
@@ -19,7 +19,7 @@ const PlanetoidStripe = ({ cx, cy, r, angle, length, offset = 0 }) => {
     y2: y,
   };
 
-  return <line {...stripeDefinition} />
+  return <line {...stripeDefinition} />;
 };
 
 PlanetoidStripe.propTypes = {

@@ -14,8 +14,7 @@ storiesOf('Orbital', module)
   .add('planetoid with moons', () => (
     <OrbitalWrapper containerSize={100}>
       <Planetoid radius={31} />
-      <Planetoid radius={6} cx={10} cy={15} />
-      <Planetoid radius={4} cx={75} cy={85} />
+      <Planetoid radius={6} positionAngle={45} positionRadius={45} />
     </OrbitalWrapper>
   ))
   .add('striped planetoid with moons', () => (
@@ -32,7 +31,6 @@ storiesOf('Orbital', module)
         <PlanetoidStripe angle={220} length={20} />
         <PlanetoidStripe angle={220} length={7} offset={25} />
       </Planetoid>
-      <Planetoid radius={6} cx={10} cy={15} />
-      <Planetoid radius={4} cx={75} cy={85} />
+      <Planetoid radius={6} positionAngle={45} positionRadius={45} animateInOrbit />
     </OrbitalWrapper>
   ));

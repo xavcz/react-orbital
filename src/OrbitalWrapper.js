@@ -1,25 +1,13 @@
 import React, { PropTypes, Children, cloneElement } from 'react';
-import { colors, borderWidth } from './_styles';
+import styled from 'styled-components';
 
-const containerSize = 100;
+const OrbitalWrapper = styled.div`
+  width: ${props => props.containerSize}px;
+  height: ${props => props.containerSize}px;
+`;
 
-const OrbitalWrapper = ({ children }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={containerSize}
-    height={containerSize}
-    fill={colors.dark}
-    stroke={colors.gold}
-    strokeWidth={borderWidth}
-    // debug
-    style={{ border: '2px red solid' }}
-  >
+export default ({ containerSize, children }) => (
+  <OrbitalWrapper>
     {Children.map(children, child => cloneElement(child, { containerSize }))}
-  </svg>
+  </OrbitalWrapper>
 );
-
-OrbitalWrapper.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default OrbitalWrapper;

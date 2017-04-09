@@ -1,8 +1,16 @@
 import React, { PropTypes, Children, cloneElement } from 'react';
 import styled, { keyframes } from 'styled-components';
+import { colors, borderWidth } from './_styles';
 
 const Planetoid = (
-  { containerSize, positionAngle = 0, positionRadius = 0, radius, children, animateInOrbit }
+  {
+    containerSize,
+    positionAngle = 0,
+    positionRadius = 0,
+    radius,
+    children,
+    orbitAnimationDuration = null,
+  }
 ) => {
   // reference values
   const angleRadian = positionAngle * Math.PI / 180;
@@ -13,45 +21,57 @@ const Planetoid = (
     ({ axis, fn }) => containerSize / 2 - positionRadius * Math[fn](angleRadian)
   );
 
+  const [cxSymmetric, cySymmetric] = reference.map(
+    ({ axis, fn }) => containerSize / 2 - positionRadius * Math[fn](angleRadian + Math.PI)
+  );
+
+  const symmetricTranslation = keyframes`
+    0%,100% {
+      transform: translate(${cx}px, ${cy}px);
+    }
+    50% {
+      transform: translate(${cxSymmetric}px, ${cySymmetric}px);
+    }
+  `;
+
+  const reliefTranslation = keyframes`
+    0% {z-index:1;}
+    49% {z-index:1;}
+    50% {z-index:-1;}
+    99% {z-index:-1;}
+    100% {z-index:1;}
+  `;
+
   const PlanetoidCircle = styled.circle`
     r: ${radius};
     ${!positionRadius && `
       cx: ${cx};
       cy: ${cy};
     `}
+    ${orbitAnimationDuration && `animation: ${symmetricTranslation} ${orbitAnimationDuration}s ease-in-out infinite;`}
   `;
 
-  const Translator = ({ duration, children }) => {
-    const [cxSymmetric, cySymmetric] = reference.map(
-      ({ axis, fn }) => containerSize / 2 - positionRadius * Math[fn](angleRadian + Math.PI)
-    );
+  const AbsoluteWrapper = styled.div`
+    position: absolute;
+    ${orbitAnimationDuration && `animation: ${reliefTranslation} ${orbitAnimationDuration}s ease-in-out infinite;`}
+  `;
 
-    const translation = keyframes`
-      0%,100% {
-        z-index: 1;
-        transform: translate(${cx}px, ${cy}px);
-      }
-      50% {
-        z-index: 3;
-        transform: translate(${cxSymmetric}px, ${cySymmetric}px);
-      }
-    `;
+  const SvgContent = styled.svg`
+    width: 100%;
+    height: 100%;
+    fill: ${colors.dark};
+    stroke: ${colors.gold};
+    strokeWidth: ${borderWidth};
+  `;
 
-    const TranslatedGroup = styled.g`
-      animation: ${translation} ${duration}s ease-in-out infinite;
-    `;
-
-    return <TranslatedGroup>{children}</TranslatedGroup>;
-  };
-
-  return children
-    ? <g>
+  return (
+    <AbsoluteWrapper>
+      <SvgContent xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
         <PlanetoidCircle />
-        {Children.map(children, child => cloneElement(child, { cx, cy, r: radius }))}
-      </g>
-    : animateInOrbit
-        ? <Translator duration={4}><PlanetoidCircle /></Translator>
-        : <PlanetoidCircle />;
+        {children && Children.map(children, child => cloneElement(child, { cx, cy, r: radius }))}
+      </SvgContent>
+    </AbsoluteWrapper>
+  );
 };
 
 Planetoid.propTypes = {

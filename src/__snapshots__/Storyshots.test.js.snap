@@ -65,114 +65,119 @@ exports[`Storyshots Orbital (CSS - deprecated) static 1`] = `
 `;
 
 exports[`Storyshots Orbital big central planetoid 1`] = `
-<svg
-  fill="#303030"
-  height={100}
-  stroke="#a78247"
-  strokeWidth="0.2vw"
-  style={
-    Object {
-      "border": "2px red solid",
-    }
-  }
-  width={100}
-  xmlns="http://www.w3.org/2000/svg">
-  <circle
-    className="gcdNTT" />
-</svg>
+<div
+  className="isuyhn">
+  <div
+    className="bXrxlf">
+    <svg
+      className="cmWqCi"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle
+        className="fXXZSJ" />
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Orbital planetoid with moons 1`] = `
-<svg
-  fill="#303030"
-  height={100}
-  stroke="#a78247"
-  strokeWidth="0.2vw"
-  style={
-    Object {
-      "border": "2px red solid",
-    }
-  }
-  width={100}
-  xmlns="http://www.w3.org/2000/svg">
-  <circle
-    className="kjrAEl" />
-  <circle
-    className="uGutg" />
-</svg>
+<div
+  className="isuyhn">
+  <div
+    className="bXrxlf">
+    <svg
+      className="cmWqCi"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle
+        className="cRYiFx" />
+    </svg>
+  </div>
+  <div
+    className="bXrxlf">
+    <svg
+      className="cmWqCi"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle
+        className="emAMTO" />
+    </svg>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Orbital striped planetoid with moons 1`] = `
-<svg
-  fill="#303030"
-  height={100}
-  stroke="#a78247"
-  strokeWidth="0.2vw"
-  style={
-    Object {
-      "border": "2px red solid",
-    }
-  }
-  width={100}
-  xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <circle
-      className="kjrAEl" />
-    <line
-      x1={28.079689783217024}
-      x2={48.07968978321702}
-      y1={28.079689783217027}
-      y2={28.079689783217027} />
-    <line
-      x1={23.1532124826824}
-      x2={33.1532124826824}
-      y1={34.5}
-      y2={34.5} />
-    <line
-      x1={38.1532124826824}
-      x2={43.1532124826824}
-      y1={34.5}
-      y2={34.5} />
-    <line
-      x1={80.52904034337845}
-      x2={55.529040343378455}
-      y1={44.616906492325164}
-      y2={44.616906492325164} />
-    <line
-      x1={81}
-      x2={66}
-      y1={49.99999999999999}
-      y2={49.99999999999999} />
-    <line
-      x1={20.056299385038884}
-      x2={40.05629938503888}
-      y1={58.023390398178144}
-      y2={58.023390398178144} />
-    <line
-      x1={45.05629938503888}
-      x2={50.05629938503888}
-      y1={58.023390398178144}
-      y2={58.023390398178144} />
-    <line
-      x1={21.90445860186385}
-      x2={56.90445860186385}
-      y1={63.10116611396168}
-      y2={63.10116611396168} />
-    <line
-      x1={73.74737773668832}
-      x2={53.74737773668832}
-      y1={69.92641590028272}
-      y2={69.92641590028272} />
-    <line
-      x1={48.74737773668832}
-      x2={41.74737773668832}
-      y1={69.92641590028272}
-      y2={69.92641590028272} />
-  </g>
-  <g
-    className="lpnvRY">
-    <circle
-      className="uGutg" />
-  </g>
-</svg>
+<div
+  className="isuyhn">
+  <div
+    className="bXrxlf">
+    <svg
+      className="cmWqCi"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle
+        className="cRYiFx" />
+      <line
+        x1={28.079689783217024}
+        x2={48.07968978321702}
+        y1={28.079689783217027}
+        y2={28.079689783217027} />
+      <line
+        x1={23.1532124826824}
+        x2={33.1532124826824}
+        y1={34.5}
+        y2={34.5} />
+      <line
+        x1={38.1532124826824}
+        x2={43.1532124826824}
+        y1={34.5}
+        y2={34.5} />
+      <line
+        x1={80.52904034337845}
+        x2={55.529040343378455}
+        y1={44.616906492325164}
+        y2={44.616906492325164} />
+      <line
+        x1={81}
+        x2={66}
+        y1={49.99999999999999}
+        y2={49.99999999999999} />
+      <line
+        x1={20.056299385038884}
+        x2={40.05629938503888}
+        y1={58.023390398178144}
+        y2={58.023390398178144} />
+      <line
+        x1={45.05629938503888}
+        x2={50.05629938503888}
+        y1={58.023390398178144}
+        y2={58.023390398178144} />
+      <line
+        x1={21.90445860186385}
+        x2={56.90445860186385}
+        y1={63.10116611396168}
+        y2={63.10116611396168} />
+      <line
+        x1={73.74737773668832}
+        x2={53.74737773668832}
+        y1={69.92641590028272}
+        y2={69.92641590028272} />
+      <line
+        x1={48.74737773668832}
+        x2={41.74737773668832}
+        y1={69.92641590028272}
+        y2={69.92641590028272} />
+    </svg>
+  </div>
+  <div
+    className="jHGltR">
+    <svg
+      className="cmWqCi"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle
+        className="dAXJZL" />
+    </svg>
+  </div>
+</div>
 `;

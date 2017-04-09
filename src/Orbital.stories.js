@@ -31,6 +31,6 @@ storiesOf('Orbital', module)
         <PlanetoidStripe angle={220} length={20} />
         <PlanetoidStripe angle={220} length={7} offset={25} />
       </Planetoid>
-      <Planetoid radius={6} positionAngle={45} positionRadius={45} animateInOrbit />
+      <Planetoid radius={6} positionAngle={45} positionRadius={45} orbitAnimationDuration={4} />
     </OrbitalWrapper>
   ));

@@ -58,13 +58,15 @@ const ThemeButton = styled.button`
   top: 1rem;
   left: 1rem;
   
-  padding: .5rem 1rem;
+  padding: 1vw 2vw;
   background: ${props => props.theme.fill};
-  border: .2rem ${props => props.theme.stroke} solid;
-  color: ${props => props.theme.stroke};
+  border: .5vw ${props => props.theme.stroke} solid;
   
+  color: ${props => props.theme.stroke};
+  font-size: 2vw;
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer; 
   
   &:focus {
     outline: 0;

@@ -39,11 +39,6 @@ const Planetoid = (
   `;
 
   const PlanetoidCircle = styled.circle`
-    r: ${radius};
-    ${!positionRadius && `
-      cx: ${cx};
-      cy: ${cy};
-    `}
     ${orbitAnimationDuration && `animation: ${symmetricTranslation} ${orbitAnimationDuration}s ease-in-out infinite;`}
   `;
 
@@ -60,14 +55,17 @@ const Planetoid = (
     height: 100%;
     fill: ${props => props.theme.fill};
     stroke: ${props => props.theme.stroke};
-    strokeWidth: ${props => props.theme.borderWidth};
+    stroke-width: 0.2vw;
   `;
+
+  const planetoidDefinition = { cx, cy, r: radius };
+  const planetoidProps = positionRadius ? { r: radius } : planetoidDefinition;
 
   return (
     <AbsoluteWrapper>
       <SvgContent xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <PlanetoidCircle />
-        {children && Children.map(children, child => cloneElement(child, { cx, cy, r: radius }))}
+        <PlanetoidCircle {...planetoidProps} />
+        {children && Children.map(children, child => cloneElement(child, planetoidDefinition))}
       </SvgContent>
     </AbsoluteWrapper>
   );

@@ -1,13 +1,14 @@
-import React, { PropTypes, Children, cloneElement } from 'react';
+import { PropTypes } from 'react';
 import styled from 'styled-components';
 
 const OrbitalWrapper = styled.div`
-  width: ${props => props.containerSize}px;
-  height: ${props => props.containerSize}px;
+  width: ${props => props.containerSize || 10}vw;
+  height: ${props => props.containerSize || 10}vw;
+  position: relative;
 `;
 
-export default ({ containerSize, children }) => (
-  <OrbitalWrapper>
-    {Children.map(children, child => cloneElement(child, { containerSize }))}
-  </OrbitalWrapper>
-);
+OrbitalWrapper.propTypes = {
+  containerSize: PropTypes.number,
+};
+
+export default OrbitalWrapper;

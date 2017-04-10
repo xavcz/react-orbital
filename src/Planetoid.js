@@ -4,7 +4,6 @@ import { colors, borderWidth } from './_styles';
 
 const Planetoid = (
   {
-    containerSize,
     positionAngle = 0,
     positionRadius = 0,
     radius,
@@ -18,11 +17,11 @@ const Planetoid = (
 
   // from the reference and the props, create a circle center svg object
   const [cx, cy] = reference.map(
-    ({ axis, fn }) => containerSize / 2 - positionRadius * Math[fn](angleRadian)
+    ({ axis, fn }) => 50 - positionRadius * Math[fn](angleRadian)
   );
 
   const [cxSymmetric, cySymmetric] = reference.map(
-    ({ axis, fn }) => containerSize / 2 - positionRadius * Math[fn](angleRadian + Math.PI)
+    ({ axis, fn }) => 50 - positionRadius * Math[fn](angleRadian + Math.PI)
   );
 
   const symmetricTranslation = keyframes`
@@ -53,6 +52,8 @@ const Planetoid = (
 
   const AbsoluteWrapper = styled.div`
     position: absolute;
+    width: 100%;
+    height: 100%;
     ${orbitAnimationDuration && `animation: ${reliefTranslation} ${orbitAnimationDuration}s ease-in-out infinite;`}
   `;
 
@@ -76,7 +77,6 @@ const Planetoid = (
 
 Planetoid.propTypes = {
   radius: PropTypes.number.isRequired,
-  containerSize: PropTypes.number,
   positionAngle: PropTypes.number,
   positionRadius: PropTypes.number,
   animateInOrbit: PropTypes.bool,

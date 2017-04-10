@@ -1,15 +1,5 @@
 import { injectGlobal } from 'styled-components';
 
-export const colors = {
-  dark: '#303030',
-  gold: '#a78247',
-};
-
-export const animationTime = '5s';
-export const borderWidth = '0.2vw';
-
-export const bordered = `border: ${borderWidth} solid ${colors.gold};`;
-
 // CSS Resets
 // eslint-disable-next-line
 injectGlobal`
@@ -23,9 +13,5 @@ injectGlobal`
   body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background: ${colors.dark}; 
-    color: ${colors.gold};
   }
 `;

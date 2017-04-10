@@ -23,7 +23,7 @@ const StripedPlanetWithMoon = ({ containerSize }) => (
   </OrbitalWrapper>
 );
 
-storiesOf('Orbital', module)
+storiesOf('Orbital (Responsive SVG)', module)
   .add('container size: 10vw', () => <StripedPlanetWithMoon />)
   .add('container size: 20vw', () => <StripedPlanetWithMoon containerSize={20} />)
   .add('container size: 30vw', () => <StripedPlanetWithMoon containerSize={30} />)

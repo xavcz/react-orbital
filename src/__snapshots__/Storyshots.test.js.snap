@@ -1,76 +1,10 @@
-exports[`Storyshots Orbital (CSS - deprecated) animated 1`] = `
-<div
-  className="hSCAmt">
-  <div
-    className="jNBSUx" />
-  <div
-    className="lmfCTh" />
-  <div
-    className="fuecod">
-    <div
-      className="huoLgr" />
-    <div
-      className="cCjqMg" />
-    <div
-      className="eZrobt" />
-    <div
-      className="cUIPEu" />
-    <div
-      className="iUINCO" />
-    <div
-      className="kMXKgt" />
-    <div
-      className="jjxjcO" />
-    <div
-      className="hrzIsD" />
-    <div
-      className="fyytHG" />
-    <div
-      className="bCsqbf" />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Orbital (CSS - deprecated) static 1`] = `
-<div
-  className="hSCAmt">
-  <div
-    className="dphzOf" />
-  <div
-    className="cNdKam" />
-  <div
-    className="fuecod">
-    <div
-      className="huoLgr" />
-    <div
-      className="cCjqMg" />
-    <div
-      className="eZrobt" />
-    <div
-      className="cUIPEu" />
-    <div
-      className="iUINCO" />
-    <div
-      className="kMXKgt" />
-    <div
-      className="jjxjcO" />
-    <div
-      className="hrzIsD" />
-    <div
-      className="fyytHG" />
-    <div
-      className="bCsqbf" />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Orbital container size: 10vw 1`] = `
+exports[`Storyshots Orbital (Responsive SVG) container size: 10vw 1`] = `
 <div
   className="cHrsOR">
   <div
-    className="ePfzxc">
+    className="dfjtlk">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -128,9 +62,9 @@ exports[`Storyshots Orbital container size: 10vw 1`] = `
     </svg>
   </div>
   <div
-    className="bXpUjW">
+    className="ihmzfL">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -140,13 +74,13 @@ exports[`Storyshots Orbital container size: 10vw 1`] = `
 </div>
 `;
 
-exports[`Storyshots Orbital container size: 20vw 1`] = `
+exports[`Storyshots Orbital (Responsive SVG) container size: 20vw 1`] = `
 <div
   className="cnvAiS">
   <div
-    className="ePfzxc">
+    className="dfjtlk">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -204,9 +138,9 @@ exports[`Storyshots Orbital container size: 20vw 1`] = `
     </svg>
   </div>
   <div
-    className="bXpUjW">
+    className="ihmzfL">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -216,13 +150,13 @@ exports[`Storyshots Orbital container size: 20vw 1`] = `
 </div>
 `;
 
-exports[`Storyshots Orbital container size: 30vw 1`] = `
+exports[`Storyshots Orbital (Responsive SVG) container size: 30vw 1`] = `
 <div
   className="sdaHh">
   <div
-    className="ePfzxc">
+    className="dfjtlk">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -280,9 +214,9 @@ exports[`Storyshots Orbital container size: 30vw 1`] = `
     </svg>
   </div>
   <div
-    className="bXpUjW">
+    className="ihmzfL">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -292,13 +226,13 @@ exports[`Storyshots Orbital container size: 30vw 1`] = `
 </div>
 `;
 
-exports[`Storyshots Orbital container size: 40vw 1`] = `
+exports[`Storyshots Orbital (Responsive SVG) container size: 40vw 1`] = `
 <div
   className="ibPlrX">
   <div
-    className="ePfzxc">
+    className="dfjtlk">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -356,9 +290,9 @@ exports[`Storyshots Orbital container size: 40vw 1`] = `
     </svg>
   </div>
   <div
-    className="bXpUjW">
+    className="ihmzfL">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -368,13 +302,13 @@ exports[`Storyshots Orbital container size: 40vw 1`] = `
 </div>
 `;
 
-exports[`Storyshots Orbital container size: 50vw 1`] = `
+exports[`Storyshots Orbital (Responsive SVG) container size: 50vw 1`] = `
 <div
   className="hvSQuG">
   <div
-    className="ePfzxc">
+    className="dfjtlk">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle
@@ -432,9 +366,9 @@ exports[`Storyshots Orbital container size: 50vw 1`] = `
     </svg>
   </div>
   <div
-    className="bXpUjW">
+    className="ihmzfL">
     <svg
-      className="cmWqCi"
+      className="goUjxl"
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg">
       <circle

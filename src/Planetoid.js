@@ -1,6 +1,5 @@
 import React, { PropTypes, Children, cloneElement } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { colors, borderWidth } from './_styles';
 
 const Planetoid = (
   {
@@ -16,9 +15,7 @@ const Planetoid = (
   const reference = [{ axis: 'x', fn: 'cos' }, { axis: 'y', fn: 'sin' }];
 
   // from the reference and the props, create a circle center svg object
-  const [cx, cy] = reference.map(
-    ({ axis, fn }) => 50 - positionRadius * Math[fn](angleRadian)
-  );
+  const [cx, cy] = reference.map(({ axis, fn }) => 50 - positionRadius * Math[fn](angleRadian));
 
   const [cxSymmetric, cySymmetric] = reference.map(
     ({ axis, fn }) => 50 - positionRadius * Math[fn](angleRadian + Math.PI)
@@ -34,11 +31,11 @@ const Planetoid = (
   `;
 
   const reliefTranslation = keyframes`
-    0% {z-index:1;}
-    49% {z-index:1;}
-    50% {z-index:-1;}
-    99% {z-index:-1;}
-    100% {z-index:1;}
+    0% { z-index:3; }
+    49% { z-index:3; }
+    50% { z-index:1; }
+    99% { z-index:1; }
+    100% { z-index:3; }
   `;
 
   const PlanetoidCircle = styled.circle`
@@ -54,15 +51,16 @@ const Planetoid = (
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 2;
     ${orbitAnimationDuration && `animation: ${reliefTranslation} ${orbitAnimationDuration}s ease-in-out infinite;`}
   `;
 
   const SvgContent = styled.svg`
     width: 100%;
     height: 100%;
-    fill: ${colors.dark};
-    stroke: ${colors.gold};
-    strokeWidth: ${borderWidth};
+    fill: ${props => props.theme.fill};
+    stroke: ${props => props.theme.stroke};
+    strokeWidth: ${props => props.theme.borderWidth};
   `;
 
   return (

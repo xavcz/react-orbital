@@ -1,11 +1,7 @@
-import { storiesOf } from '@kadira/storybook';
 import React from 'react';
+import { OrbitalWrapper, Planetoid, PlanetoidStripe } from '../atoms';
 
-import OrbitalWrapper from './OrbitalWrapper';
-import Planetoid from './Planetoid';
-import PlanetoidStripe from './PlanetoidStripe';
-
-const StripedPlanetWithMoon = ({ containerSize }) => (
+const StripedPlanetWithMoons = ({ containerSize }) => (
   <OrbitalWrapper containerSize={containerSize}>
     <Planetoid radius={31}>
       <PlanetoidStripe angle={45} length={20} />
@@ -23,9 +19,4 @@ const StripedPlanetWithMoon = ({ containerSize }) => (
   </OrbitalWrapper>
 );
 
-storiesOf('Orbital (Responsive SVG)', module)
-  .add('container size: 10vw', () => <StripedPlanetWithMoon />)
-  .add('container size: 20vw', () => <StripedPlanetWithMoon containerSize={20} />)
-  .add('container size: 30vw', () => <StripedPlanetWithMoon containerSize={30} />)
-  .add('container size: 40vw', () => <StripedPlanetWithMoon containerSize={40} />)
-  .add('container size: 50vw', () => <StripedPlanetWithMoon containerSize={50} />);
+export default StripedPlanetWithMoons;

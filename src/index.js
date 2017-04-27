@@ -1,5 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './_styles';
+import './theme/global-styles';
+import ThemeDecorator from './theme/ThemeDecorator';
+import StripedPlanetWithMoons from './examples/StripedPlanetWithMoons';
 
-ReactDOM.render(<div>Check Storybook: npm run storybook</div>, document.getElementById('root'));
+ReactDOM.render(
+  <ThemeDecorator>
+    <StripedPlanetWithMoons containerSize={20} />
+  </ThemeDecorator>,
+  document.getElementById('root')
+);

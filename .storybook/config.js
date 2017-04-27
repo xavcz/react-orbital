@@ -1,6 +1,6 @@
 import React from 'react';
 import { configure, addDecorator } from '@kadira/storybook';
-import '../src/_styles';
+import '../src/theme/global-styles';
 import ThemeDecorator from '../src/theme/ThemeDecorator';
 
 const req = require.context('../src', true, /.stories.js$/)

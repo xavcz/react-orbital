@@ -1,4 +1,4 @@
-exports[`Storyshots Orbital (Responsive SVG) container size: 10vw 1`] = `
+exports[`Storyshots Striped planet with moons container size: 10vw 1`] = `
 <div
   className="cHrsOR">
   <div
@@ -78,7 +78,7 @@ exports[`Storyshots Orbital (Responsive SVG) container size: 10vw 1`] = `
 </div>
 `;
 
-exports[`Storyshots Orbital (Responsive SVG) container size: 20vw 1`] = `
+exports[`Storyshots Striped planet with moons container size: 20vw 1`] = `
 <div
   className="cnvAiS">
   <div
@@ -158,7 +158,7 @@ exports[`Storyshots Orbital (Responsive SVG) container size: 20vw 1`] = `
 </div>
 `;
 
-exports[`Storyshots Orbital (Responsive SVG) container size: 30vw 1`] = `
+exports[`Storyshots Striped planet with moons container size: 30vw 1`] = `
 <div
   className="sdaHh">
   <div
@@ -238,7 +238,7 @@ exports[`Storyshots Orbital (Responsive SVG) container size: 30vw 1`] = `
 </div>
 `;
 
-exports[`Storyshots Orbital (Responsive SVG) container size: 40vw 1`] = `
+exports[`Storyshots Striped planet with moons container size: 40vw 1`] = `
 <div
   className="ibPlrX">
   <div
@@ -318,7 +318,7 @@ exports[`Storyshots Orbital (Responsive SVG) container size: 40vw 1`] = `
 </div>
 `;
 
-exports[`Storyshots Orbital (Responsive SVG) container size: 50vw 1`] = `
+exports[`Storyshots Striped planet with moons container size: 50vw 1`] = `
 <div
   className="hvSQuG">
   <div
